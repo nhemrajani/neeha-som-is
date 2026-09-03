@@ -1,0 +1,17 @@
+{
+  "title": "Independent Study",
+  "subtitle": "Research log and progress dashboard",
+  "student": "Neeharika Hemrajani",
+  "advisor": "TBD — advisor name",
+  "term": "Fall 2026",
+  "creditHours": "TBD",
+  "question": "TBD — the central research question this study is trying to answer.",
+  "motivation": "TBD — why this question matters and what gap it fills.",
+  "methods": "TBD — how you plan to answer it (data, interviews, modeling, case work).",
+  "deliverables": [
+    { "name": "Literature review memo", "due": "TBD", "status": "not started" },
+    { "name": "Mid-semester check-in", "due": "TBD", "status": "not started" },
+    { "name": "Final paper", "due": "TBD", "status": "not started" },
+    { "name": "Final presentation", "due": "TBD", "status": "not started" }
+  ]
+}

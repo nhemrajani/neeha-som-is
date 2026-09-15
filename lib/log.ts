@@ -22,9 +22,8 @@ export type Study = {
   title: string;
   subtitle: string;
   student: string;
-  advisor: string;
+  supervisor: string;
   term: string;
-  creditHours: string;
   question: string;
   motivation: string;
   methods: string;

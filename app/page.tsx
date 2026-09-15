@@ -29,16 +29,12 @@ export default function Dashboard() {
             <dd>{study.student}</dd>
           </div>
           <div>
-            <dt>Advisor</dt>
-            <dd>{study.advisor}</dd>
+            <dt>Supervisor</dt>
+            <dd>{study.supervisor}</dd>
           </div>
           <div>
             <dt>Term</dt>
             <dd>{study.term}</dd>
-          </div>
-          <div>
-            <dt>Credits</dt>
-            <dd>{study.creditHours}</dd>
           </div>
         </dl>
       </header>
@@ -58,14 +54,14 @@ export default function Dashboard() {
         </div>
       </section>
 
-      <h2>The question</h2>
+      <h2>The Question</h2>
       <div className="card prose">
         <div className="field">
-          <h3>Research question</h3>
+          <h3>Research Question</h3>
           <p>{study.question}</p>
         </div>
         <div className="field">
-          <h3>Why it matters</h3>
+          <h3>Why It Matters</h3>
           <p>{study.motivation}</p>
         </div>
         <div className="field">

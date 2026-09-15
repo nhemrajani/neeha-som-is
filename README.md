@@ -363,8 +363,8 @@ and efficiency, will be published here with the literature review.
 ## This Repository
 
 This repository holds the research log and the dashboard that renders it. The
-experiment code and results live in a separate public repository, linked here once it
-is established.
+experiment code, saved results and generated figures are added here as they are
+produced, together with an environment file so that the pipeline clones and runs.
 
 ```
 content/study.json      Study overview shown at the top of the dashboard

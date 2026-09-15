@@ -1,9 +1,26 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Data and large artefacts: never committed
+data/*
+!data/.gitkeep
+results/embeddings/
+*.pkl
+*.npz
+*.pt
+
+# Node / dashboard
 node_modules/
 .next/
 out/
+next-env.d.ts
+
+# Environment and local
 .env
 .env.local
+.vercel
 .DS_Store
 *.log
-.vercel
-next-env.d.ts

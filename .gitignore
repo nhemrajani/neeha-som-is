@@ -12,15 +12,7 @@ results/embeddings/
 *.npz
 *.pt
 
-# Node / dashboard
-node_modules/
-.next/
-out/
-next-env.d.ts
-
-# Environment and local
+# Local
 .env
-.env.local
-.vercel
 .DS_Store
 *.log

@@ -4,39 +4,13 @@
   "student": "Neeharika Hemrajani",
   "supervisor": "Professor Sohee Park",
   "term": "Fall 2026",
-  "question": "How much predictive benefit does per-person adaptation of an open PPG foundation model provide over the cheap normalisation already standard in production, how much individual data does it require, and what does it cost at scale?",
-  "motivation": "PPG foundation models are trained once for an entire population and never change for an individual, so a model optimised for the average performs mediocrely for any specific person. Production systems patch this by normalising each person's readings against their own rolling baseline — cheap and robust, but it assumes the signal-to-outcome relationship is shared across people and only the centre and range differ. For some people the mapping itself differs (vascular structure, arrhythmia, age, skin tone affecting the optical signal), and only personalising the model can re-learn it. Whether that is worth doing is a compute-allocation question before it is an accuracy one.",
-  "methods": "Entirely on open foundation models and open datasets: reproduce a published downstream result as a baseline, then compare adaptation methods (normalisation, linear probing, LoRA/adapters, full fine-tuning) on one task under one evaluation protocol, each run at several personal-data budgets. Cost is measured as parameters updated and stored bytes per person. Fairness across subgroups, including skin tone, is a first-class result rather than an afterthought.",
+  "question": "How much predictive benefit does per-person adaptation of an open PPG foundation model provide over the per-person normalisation already standard in production, how much individual data does it require, and what does it cost at scale?",
+  "motivation": "PPG foundation models are trained once for an entire population and do not change for an individual, so a model optimised for the average performs only moderately well for any particular person. Production systems address this through normalisation, scoring readings against a personal rolling baseline, which assumes the signal-to-outcome relationship is shared across people and only the centre and range differ. For some people the mapping itself differs, whether through vascular structure, arrhythmia, age, or the effect of skin tone on the optical signal, and only adapting the model can re-learn it. Whether that is worth doing is a question of compute allocation before it is one of accuracy.",
+  "methods": "Heart-rate estimation on PPG-DaLiA, using the PaPaGei encoder in both its S and P variants. Six arms are compared on identical test sets: the population model, per-person normalisation, a warm-started per-person linear probe, parameter-efficient adaptation, full fine-tuning as an upper bound, and demographics as an optional cheap arm. Each is swept across adaptation budgets of 2 to 40 minutes and all-available data, under an activity-stratified split with a buffer between the adaptation and test blocks. Cost is measured primarily as trainable parameters per person, with stored bytes as the deployment translation.",
   "deliverables": [
-    {
-      "name": "Literature review (~8–12 pages)",
-      "due": "Draft at mid-term",
-      "status": "in progress"
-    },
-    {
-      "name": "Proposal + Yale IS petition",
-      "due": "First two weeks of term",
-      "status": "in progress"
-    },
-    {
-      "name": "Reproducible baseline repository",
-      "due": "End of term",
-      "status": "not started"
-    },
-    {
-      "name": "Results memo (~2–3 pages)",
-      "due": "End of term",
-      "status": "not started"
-    },
-    {
-      "name": "Personalisation + efficiency experiments",
-      "due": "End of term",
-      "status": "not started"
-    },
-    {
-      "name": "Technical paper (~15–20 pages) and results talk",
-      "due": "End of term",
-      "status": "not started"
-    }
+    { "name": "Proposal, plan of work, bibliography", "due": "Thu 17 September (Week 3)", "status": "in progress" },
+    { "name": "Midterm report, working code, public repo, reproduction note", "due": "Thu 22 October (Week 8)", "status": "not started" },
+    { "name": "Progress presentation, results on two backbones, graphs, paper outline", "due": "Thu 19 November (Week 12)", "status": "not started" },
+    { "name": "Final paper, public repo, final presentation", "due": "Thu 17 December (Week 16)", "status": "not started" }
   ]
 }

@@ -38,9 +38,9 @@ efficiency work that depends on it.
 
 **Open items**
 
-- Confirm the target downstream task for the baseline — heart-rate estimation on
-  PPG-DaLiA is the obvious first candidate.
-- Decide between PaPaGei and Pulse-PPG as the primary base model.
+- Confirm the target downstream task for the baseline. Heart-rate estimation on
+  PPG-DaLiA is the obvious first candidate, given the published number to reproduce.
+- Decide on the base model and whether both of its variants are in scope.
 - File the Yale independent study petition within the first two weeks of term, with
   the sponsoring faculty email attached.
 

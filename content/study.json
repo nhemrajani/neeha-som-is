@@ -3,7 +3,7 @@
   "subtitle": "How cheaply can a shared model be tuned to fit one person, when is that worth the cost, and does it help everyone equally?",
   "student": "Neeharika Hemrajani",
   "supervisor": "Professor Sohee Park",
-  "term": "Fall 2026 (Part 1 of 2)",
+  "term": "Fall 2026",
   "question": "How much predictive benefit does per-person adaptation of an open PPG foundation model provide over the cheap normalisation already standard in production, how much individual data does it require, and what does it cost at scale?",
   "motivation": "PPG foundation models are trained once for an entire population and never change for an individual, so a model optimised for the average performs mediocrely for any specific person. Production systems patch this by normalising each person's readings against their own rolling baseline — cheap and robust, but it assumes the signal-to-outcome relationship is shared across people and only the centre and range differ. For some people the mapping itself differs (vascular structure, arrhythmia, age, skin tone affecting the optical signal), and only personalising the model can re-learn it. Whether that is worth doing is a compute-allocation question before it is an accuracy one.",
   "methods": "Entirely on open foundation models and open datasets: reproduce a published downstream result as a baseline, then compare adaptation methods (normalisation, linear probing, LoRA/adapters, full fine-tuning) on one task under one evaluation protocol, each run at several personal-data budgets. Cost is measured as parameters updated and stored bytes per person. Fairness across subgroups, including skin tone, is a first-class result rather than an afterthought.",
@@ -20,22 +20,22 @@
     },
     {
       "name": "Reproducible baseline repository",
-      "due": "End of Fall",
+      "due": "End of term",
       "status": "not started"
     },
     {
       "name": "Results memo (~2–3 pages)",
-      "due": "End of Fall",
+      "due": "End of term",
       "status": "not started"
     },
     {
       "name": "Personalisation + efficiency experiments",
-      "due": "Spring 2027",
+      "due": "End of term",
       "status": "not started"
     },
     {
       "name": "Technical paper (~15–20 pages) and results talk",
-      "due": "Spring 2027",
+      "due": "End of term",
       "status": "not started"
     }
   ]

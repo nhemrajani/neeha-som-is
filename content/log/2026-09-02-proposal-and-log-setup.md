@@ -33,7 +33,8 @@ That gives three questions that stack:
 3. **Efficiency frontier** — what did that improvement cost, and where does it stop
    being worth it?
 
-Fall takes Q1; Spring takes Q2 and Q3.
+All three sit within this term: the baseline first, then the personalisation and
+efficiency work that depends on it.
 
 **Open items**
 

@@ -1,6 +1,6 @@
 # Compute-Efficient Personalisation of PPG Foundation Models
 
-Independent Study, Fall 2026 – Spring 2027
+Independent Study, Fall 2026
 Neeharika Hemrajani
 Supervisor: Professor Sohee Park
 
@@ -101,14 +101,16 @@ run at several personal-data budgets.
 
 ## Plan of Work
 
-|  | Part 1, Fall 2026: Foundations and open baseline | Part 2, Spring 2027: Personalisation and efficiency |
+The study runs across a single term and proceeds in two phases.
+
+|  | Phase 1: Foundations and open baseline | Phase 2: Personalisation and efficiency |
 | --- | --- | --- |
 | Focus | Q1 | Q2 and Q3 |
 | Core work | Data handling, PPG preprocessing, loading a pretrained open model, reproducing one downstream metric | Parameter-efficient adaptation, per-person experiments, accuracy-versus-compute analysis, fairness analysis |
 | Data | Open PPG datasets (PPG-DaLiA, WESAD) with own WHOOP-derived metrics | As above, with deeper use of the n = 1 longitudinal data |
-| Output | Literature review, reproducible baseline repository, results memo | Technical paper, experiment repository, results talk |
+| Output | Literature review, reproducible baseline repository, interim results memo | Technical paper, experiment repository, results talk |
 
-### Skills Developed in Fall
+### Skills Developed
 
 Python fluency, taken alongside CPSC 1100; scientific Python (NumPy, Pandas, SciPy);
 PPG preprocessing, covering filtering, segmentation and peak detection; machine
@@ -118,14 +120,9 @@ model in order to linear-probe a downstream task.
 
 ## Deliverables
 
-### Fall 2026
-
 - A literature review of approximately 8 to 12 pages, covering the open PPG foundation model landscape, the personalisation and efficiency gap, and a precise statement of questions and datasets. A draft is submitted at mid-term for feedback.
 - A reproducible baseline repository that loads an open PPG dataset, runs preprocessing, loads a published open model, and reproduces one downstream metric, with a README and environment file so that it clones and runs.
-- A results memo of approximately 2 to 3 pages, reporting the baseline figure, any surprises, and the specific personalisation experiments proposed for Spring.
-
-### Spring 2027
-
+- A results memo of approximately 2 to 3 pages, reporting the baseline figure, any surprises, and the specific personalisation experiments that follow from it.
 - Personalisation experiments comparing population and per-person results for a set of individuals, across at least three adaptation methods, with leakage-safe splits and error bars.
 - An efficiency-frontier analysis giving the accuracy-versus-compute curve and a defensible answer to the question of when personalisation is worth its cost.
 - A fairness analysis establishing whether personalisation narrows or widens subgroup gaps, reported with standard fairness metrics, namely demographic parity and equality of opportunity, alongside accuracy.
@@ -138,7 +135,7 @@ enough as one of sample efficiency. This tests not only whether personalisation 
 more accurate, but whether its confidence can be trusted, which is what should make a
 per-person model safe to act on.
 
-Assessment is by these deliverables at the end of each term, supported by a weekly
+Assessment is by these deliverables at the end of the term, supported by a weekly
 research log, linked above, and biweekly supervisor check-ins.
 
 ## Intended Contributions
@@ -167,7 +164,7 @@ and Git with GitHub.
 | [Saha et al. (2025), Pulse-PPG](https://arxiv.org/abs/2502.01108) | An open, field-trained PPG foundation model, held as a comparison base. ([code](https://github.com/maxxu05/pulseppg)) |
 | [Abbaspourazad et al. (2024), Apple](https://arxiv.org/abs/2312.05409), ICLR 2024 | A consumer-scale PPG and ECG foundation model, showing that the representations carry health signal. |
 | [Narayanswamy et al. (2024), Google](https://research.google/pubs/scaling-wearable-foundation-models), ICLR 2025 | How wearable foundation models scale with data, compute and size. |
-| [Hu et al. (2021), LoRA](https://arxiv.org/abs/2106.09685) | The core parameter-efficient method for the Spring experiments. |
+| [Hu et al. (2021), LoRA](https://arxiv.org/abs/2106.09685) | The core parameter-efficient method for the personalisation experiments. |
 | Sattigeri, Ghosh et al. (2022), Fair Infinitesimal Jackknife, NeurIPS 2022 | Improving the fairness of a pre-trained model without refitting, grounding the fairness pillar and its metrics. |
 | [Koerber et al. (2023)](https://pubmed.ncbi.nlm.nih.gov/36333652/) | Heart-rate accuracy across skin tones, and the equity motivation for the study. |
 | [Reiss et al. (2019), PPG-DaLiA](https://archive.ics.uci.edu/dataset/495/ppg+dalia) and [Schmidt et al. (2018), WESAD](https://archive.ics.uci.edu/dataset/465/wesad) | The two baseline datasets. |
